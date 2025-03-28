@@ -1,0 +1,104 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* added by me */
+
+body {
+  background-color: #94ffdb1e;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Your custom styles */
+.app {
+  max-width: auto; /* 'auto' isn’t ideal here—consider a fixed value like 1280px */
+  margin: 0 auto;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  color: white;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Changed to 4 columns */
+  gap: 15px;
+  justify-content: center;
+  color: white;
+}
+
+.product-item {
+  border: 2px solid #00ff88;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #4d4d4d;
+}
+
+.product-item h2 {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #4d4d4d;
+}
+
+.product-item p {
+  margin: 5px 0;
+  color: #ffffff;
+  border: #00ff88 5px;
+  letter-spacing: 1px;
+  /* border: #00ff88 5px; — This is invalid, needs 'solid' or similar */
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
